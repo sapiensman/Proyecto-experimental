@@ -1,0 +1,71 @@
+<link href="../static/css/shopletters.css" rel="stylesheet" type="text/css">
+<p>{%extends 'base.html' %}
+  {% load static %}
+  
+  {% block titulo%} Galeria {% endblock titulo %}
+  
+  {%block titulo_cabecera%} GALERIA {%endblock titulo_cabecera%}
+  {%block descripcion%}Observa nuestros mejores momentos{%endblock descripcion%}
+  
+  {% block contenido%}</p>
+<table width="100%" border="2" cellspacing="0" cellpadding="4">
+  <tbody>
+    <tr>
+      <td valign="top" bgcolor="#FFD883" class="nuevaletra"><p>&nbsp;</p>
+        <div class="container">
+          <div class="row">
+            <div class="page-wrapper">
+              <h3 class="nuevaletra">Escultores</h3>
+              <div class="nuevaletra"> <b><a href="{% url 'galeria' %}">Fotos</a></b> <b><a href="{% url 'esculturas' %}">Esculturas</a></b> <b><a href="{% url 'escultores' %}">Escultores</a></b> 
+                <hr>
+              </div>
+              <div class="img-gallery">
+                <div class="card"> <img src="{% static 'img/escultores/0001.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b>Gonzalo Colombo, </b> Corrientes - Argentina</p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/0002.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b>Fabian Nanni, </b> Salta - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/003.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> Carina R. Fabaro, </b> La Rioja - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/0004.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> Dario G. Nuñez, </b> Misiones - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/005.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> Oscar Leiva, </b> Impenetrable, Chaco - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/0006.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> Mauro Musante, </b> Santa Fe - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/008.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> Juan M. Demtschenko, </b> Buenos Aires - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/0009.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> Juan U. Parafioriti, </b> Buenos Aires - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/010.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> Pablo Dompe, </b> Buenos Aires - Argentina </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/011.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p>"Obra en Proceso", <b> León Saavedra Geuer, </b> Bolivia </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/012.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p> "Obra en Proceso", <b> Tobel, </b> Alemania </p>
+                </div>
+                <div class="card"> <img src="{% static 'img/escultores/013.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                  <p> "Obra en Proceso", <b> Qian Sihua, </b> China </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFD883" class="nuevaletra">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+ {% endblock contenido%}

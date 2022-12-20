@@ -1,0 +1,51 @@
+<link href="../static/css/shopletters.css" rel="stylesheet" type="text/css">
+<p>{%extends 'base.html' %}
+  {% load static %}
+  
+  {% block titulo%} Galería de fotos {% endblock titulo %}
+  
+  {%block titulo_cabecera%} FOTOS {%endblock titulo_cabecera%}
+  {%block descripcion%}Observa nuestros mejores momentos{%endblock descripcion%}
+  
+  {% block contenido%}</p>
+<table width="100%" border="2" cellspacing="0" cellpadding="4">
+  <tbody>
+    <tr>
+      <td bgcolor="#FFD883" class="nuevaletra"><p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div class="container">
+        <div class="row">
+          <div class="page-wrapper">
+            <div class="ful-img" id="fullImgBox"></div>
+            <h3 class="nuevaletra"><span><u>FOTOS ESCULTORES en el IMPENETRABLE 2022: </u></span></h3>
+            <p>&quot;Sacamos a la luz lo que late en El Impenetrable&quot; - 28 al 31 de Julio 2022</p>
+            <div class="nuevaletra"> <b><a href="{% url 'galeria' %}">Fotos</a></b> <b><a href="{% url 'esculturas' %}">Esculturas</a></b> <b><a href="{% url 'escultores' %}">Escultores</a></b> 
+              <hr>
+            </div>
+            <div class="img-gallery">
+              <div class="card"> <img src="../media/noticias/foto2.jpg" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  style="width:50%; height:auto; margin:0 auto; alt="">
+                <p>&nbsp;</p>
+              </div>
+              <div class="card"> <img src="../media/noticias/foto3.jpg" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  style="width:50%; height:auto; margin:0 auto; alt="">
+                <p>&nbsp;</p>
+              </div>
+              <div class="card"> <img src="../media/noticias/foto5.jpg" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  style="width:50%; height:auto; margin:0 auto; alt="">
+                <p>&nbsp;</p>
+              </div>
+              <div class="card"> <img src="{% static 'img/4.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  style="width:50%; height:auto; margin:0 auto; alt="">
+                <p>&nbsp;</p>
+              </div>
+              <div class="card"> <img src="{% static 'img/5.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  style="width:50%; height:auto; margin:0 auto; alt="">
+                <p>&nbsp;</p>
+              </div>
+              <div class="card"> <img src="{% static 'img/7.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  style="width:50%; height:auto; margin:0 auto; alt="">
+                <p>&nbsp;</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div></td>
+    </tr>
+  </tbody>
+</table>
+<p>{% endblock contenido%}</p>

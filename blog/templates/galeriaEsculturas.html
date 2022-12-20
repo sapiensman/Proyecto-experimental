@@ -1,0 +1,78 @@
+<link href="../static/css/shopletters.css" rel="stylesheet" type="text/css">
+<p>{%extends 'base.html' %}
+  {% load static %}
+  
+  {% block titulo%} Galeria {% endblock titulo %}
+  
+  {%block titulo_cabecera%} GALERIA {%endblock titulo_cabecera%}
+  {%block descripcion%}Observa nuestros mejores momentos{%endblock descripcion%}
+  
+  {% block contenido%}</p>
+<table width="100%" border="2" cellspacing="0" cellpadding="4">
+  <tbody>
+    <tr>
+      <td valign="top" bgcolor="#FFD883" class="nuevaletra"><p>&nbsp;</p>
+      <div class="container">
+        <div class="row">
+          <div class="page-wrapper">
+            <h3 class="nuevaletra">Esculturas</h3>
+            <div class="secc-galeria"> <b><a href="{% url 'galeria' %}">Fotos</a></b> <b><a href="{% url 'esculturas' %}">Esculturas</a></b> <b><a href="{% url 'escultores' %}">Escultores</a></b>
+              <hr>
+            </div>
+            <div class="img-gallery">
+              <div class="card"> <img src="{% static 'img/esculturas/01.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Geometría Divina", <b>Gonzalo Colombo, </b> Material: Palo Santo. Corrientes - Argentina </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/02.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Raíz de Vida", <b> Fabian Nanni, </b> Material: Marmol Traventino. Salta - Argentina </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/03.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Escencia Original", <b> Carina R. Fabaro, </b> Material: Palo Santo. La Rioja - Argentina </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/04.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Desde las Estrellas", <b> Dario G. Nuñez,</b> Material: Palo Santo. Misiones - Argentina </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/05.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Bhu'o", <b> Oscar Leiva, </b> Material: Palo Santo. Impenetrable, Chaco - Argentina</p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/06.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Mitosis", <b> Mauro Musante,</b> Material: Palo Santo. Santa Fe - Argentina </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/08.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Desde el Nacimiento", <b> Juan M. Demtschenko,</b> Material: Palo Santo. Buenos Aires - Argentina</p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/09.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Matriz - Cuerpo de Agua", <b> Juan U. Parafioriti,</b> Material: Palo Santo. Buenos Aires - Argentina </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/10.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Emergentes", <b> Pablo Dompe,</b> Material: Palo Santo. Buenos Aires - Argentina </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/11.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Semillas", <b> León Saavedra Geuer,</b> Material: Metal. Bolivia </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/12.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Eternidad", <b> Tobel,</b> Material: Mármol. Alemania </p>
+              </div>
+              <div class="card"> <img src="{% static 'img/esculturas/13.jpg' %}" onclick="openFullImg(this.src)" style="width:50%; height:auto; margin:0 auto;  alt="">
+                <p>Obra: "Devenir - Becoming", <b> Qian Sihua ,</b> Material: Mármol. China </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div></td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<div class="container">
+  <div class="row">
+    <div class="page-wrapper">
+      <div class="img-gallery">
+        <div class="card">        </div>
+          </div>
+            
+
+        </div>
+    </div>     
+</div>
+{% endblock contenido%}

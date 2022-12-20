@@ -1,0 +1,40 @@
+<link href="../../static/css/shopletters.css" rel="stylesheet" type="text/css">
+<h1><u>NOTICIAS EN DETALLE : </u></h1>
+	<table width="100%" border="0" cellspacing="0" cellpadding="4">
+	  <tbody>
+	    <tr bgcolor="#FFD883" class="nuevaletra">
+	      <td><p>{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}NOTICIAS{% endblock titulo %}
+
+
+{% block contenido %}</p>
+          <p><img src="{{noticia.imagen.url}}" width:50%; height:auto; margin:0 auto;"> </p>
+          <p class="nuevaletra">TITULO: {{noticia.titulo}}</p>
+          <p class="nuevaletra">FECHA: {{noticia.fecha}}</p>
+          <p class="nuevaletra">CATEGORIA: {{noticia.categoria_noticia}}</p>
+          <p class="nuevaletra">CUERPO: {{noticia.cuerpo}}</p>
+          <br>
+          <br>
+          <br>
+          <form method="POST" action="{% url 'noticias:comentar' %}">
+            {% csrf_token %}
+            <textarea name="comentario" maxlength="1500"> </textarea>
+            <input type="text" name="id_noticia" value="{{noticia.pk}}" hidden="">
+            <input type="submit" value="GUARDAR">
+          </form>
+          <br>
+          <br>
+          <br>
+          <h3 class="verdanax2">COMENTARIOS</h3>
+          <span class="verdanax2">          {% for com in comentarios %}
+		{% if user == com.usuario %} <a href="">borrar</a> {% endif %} <strong>FECHA:{{com.fecha}}</strong><br>
+        <strong>USUARIO:{{com.usuario}}</strong><br>
+          </span>
+          <p class="verdanax2">{{com.texto}}</p>
+          <span class="verdanax2">          {% endfor %} <a href="{% url 'noticias:listar' %}">VOLVER</a> {% endblock contenido %} </span></td>
+        </tr>
+      </tbody>
+</table>
+	<p>&nbsp;</p>

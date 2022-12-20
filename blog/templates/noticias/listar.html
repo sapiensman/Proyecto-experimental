@@ -1,0 +1,44 @@
+<link href="../../static/css/shopletters.css" rel="stylesheet" type="text/css">
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}NOTICIAS{% endblock titulo %}
+
+
+{% block contenido %}
+	<div class="submenu">
+
+		<a href="{% url 'noticias:listar' %}">TODAS -- </a>
+		{% for cat in categorias %}
+			<a href="?id={{cat.pk}}">{{cat.nombre}} --</a>
+		{% endfor %}
+
+	</div>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="4">
+	  <tbody>
+	    <tr>
+	      <td><p>&nbsp;</p>
+          <p>&nbsp;</p></td>
+        </tr>
+      </tbody>
+</table>
+<h1>&nbsp;</h1>
+	<h1> NOTICIAS Y NUEVOS EVENTOS : </h1>
+	<table width="100%" border="0" cellspacing="0" cellpadding="4">
+	  <tbody>
+	    <tr>
+	      <td bgcolor="#FFD883" class="nuevaletra"><p>{% for noti in noticias %} <img src="{{noti.imagen.url}}" width:50%; height:auto; margin:0 auto;> </p>
+	        <p><a href="{% url 'noticias:detalle' noti.pk %}">TITULO: {{noti.titulo}}</a></p>
+            <p>FECHA: {{noti.fecha}}</p>
+            <p>CATEGORIA: {{noti.categoria_noticia}}</p>
+            <p>CUERPO: {{noti.cuerpo}}</p>
+            <br>
+            <br>
+{% endfor %}
+{% endblock contenido %}
+          <p>&nbsp;</p></td>
+        </tr>
+      </tbody>
+</table>
+	<p>&nbsp;</p>

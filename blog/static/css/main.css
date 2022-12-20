@@ -1,0 +1,179 @@
+@charset "utf-8";
+.contenedor{
+	background-color: burlywood;
+}
+
+.centrar{
+	text-align: center;
+}
+
+.bloque{
+	text-align: center;
+	padding: 100px;
+}
+
+.submenu{
+	font-size: 18px	;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.bodystyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+.medium {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.big {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.xbig {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 36px;
+	-moz-border-end-color: #950602;
+	color: #950602;
+	-moz-box-shadow: 0px 0px 35px;
+	background-color: #FFC;
+	border-bottom-color: #F60;
+}
+
+.expanded {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+
+.justified {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+
+.footer {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 9px;
+	color: #999999;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: medium;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+
+.box2 {
+	font-style: italic;
+	word-spacing: 2pt;
+	padding: 3px;
+	border: 1px solid;
+}
+.nuevaletra {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	font-variant: inherit;
+	line-height: normal;
+	text-transform: none;
+	font-family: "Comic Sans MS", cursive;
+	color: #600;
+}
+.verdanax2 {
+	font-size: 18px;
+	font-family: Verdana;
+}
+.marron {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	background-color: #FF9;
+	font-style: italic;
+	font-weight: bolder;
+	height: auto;
+	color: #600;
+	box-sizing: inherit;
+	border-top-color: #630;
+	border-style: none;
+	border-radius: 18px;
+	word-break: normal;
+}
+.overline {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: overline;
+	-moz-background-size: auto;
+	visibility: visible;
+	font-size: 24px;
+}
+.nuevaletra1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: oblique;
+	font-weight: bold;
+	background-color: #FF0;
+}
+.nuevaletra2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+}
+.marron {
+	font-size: 24px;
+	color: #600;
+	background-color: #FFC;
+	font-style: italic;
+	font-weight: bolder;
+	line-height: normal;
+	word-spacing: normal;
+	text-align: left;
+	font-family: "Comic Sans MS", cursive;
+}
+.Arial {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+body {
+}
+
+
+
+
+.contenedor{
+	background-color: aqua;
+}
+
+.centrar{
+	text-align: center;
+}
+
+.bloque{
+	text-align: center;
+	padding: 100px;
+}
+
+.submenu{
+	font-size: 18px	;
+}
